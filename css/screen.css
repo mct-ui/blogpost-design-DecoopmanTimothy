@@ -1,340 +1,348 @@
-/*
-    Fonts
-    --- 
-    @font-face declarations
+/* 
+    Fonts 
+    ---
+    @font-face declaration 
 */
-
-@font-face{
+ 
+@font-face {
     font-family: "Inter Web";
     font-weight: 400;
     src: url("../fonts/Inter-Regular.woff2") format("woff2");
-}
-
-@font-face{
+  }
+   
+  @font-face {
     font-family: "Inter Web";
     font-weight: 700;
     src: url("../fonts/Inter-Bold.woff2") format("woff2");
-}
-
-/* 
-    Components: Author 
-*/
-
-.c-author{
-    display: flex;
-    align-items: center;
-    margin-bottom: 24px;
-    gap: 16px;
-}
-
-.c-author__image{
-    width: 56px;
-    height: 56px;
-    border-radius: 100%;
-}
-.c-author__name{
-    font-size: 16px;
-    line-height: 24px;
-}
-.c-author__meta{
-    font-size: 14px;
-    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 24px;
-}
-
-/*
-    components: Article
-*/
-
-.c-article__header{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 24px 24px 0;
-}
-
-.c-article__body{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-/*
-    Utilities: max-width
-    --- 
-    Utility classes to put specific max widths onto elements
-*/
-
-.u-max-width-sm{
-    max-width: 36em;
-}
-
-
-/*
-    Elements: Page
-    ---
-    Default markup for page level elements
-*/
-
-html {
+  }
+   
+  /*
+      Elements: Page
+      ---
+      Default markup for page level elements
+  */
+   
+  html {
     font-size: 16px;
     line-height: 1.5;
-    /*font-family: "Inter Web", "Helvetica Neue", Helvetica, arial, sans-serif;*/
-    font-family: "droid-serif", Georgia, serif;
-    color: #5C6366;
+    font-family: "Inter Web", "Helvetica Neue", Helvetica, arial, sans-serif;
+    color: #5c6366;
     padding: 48px 24px 24px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-    max-width: 42em;
-    margin: 0 auto;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::selection {
+  }
+   
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Customize the background color to match your design.
+   */
+   
+  ::selection {
     background: #1abaff;
     color: white;
     text-shadow: none;
-}
-
-/*
-    Elements: Images
-    ---
-    Default markup for images to make them responsive
-*/
-
-img {
+  }
+   
+  /*
+      Elements: Images
+      ---
+      Default markup for images to make them responsive
+  */
+   
+  img {
     max-width: 100%;
     vertical-align: top;
-}
-
-/*
-    Elements: typography
-    ---
-    Default markup for typographic elements
-*/
-
-h1 {
+  }
+   
+  /*
+      Elements: typography
+      ---
+      Default markup for typographic elements
+  */
+   
+  h1,
+  h2,
+  h3 {
+    color: #17181a;
+    font-family: "Inter Web", sans-serif;
+  }
+   
+  h1 {
+    font-family: "Playfair Display", serif;
     font-size: 36px;
-    font-weight: normal;
+    /* font-weight: normal; */
     line-height: 40px;
     margin: 0 0 24px;
-    color: #17181A;
-    font-family: "Playfair Display", serif;
-}
-
-h2 {
+  }
+   
+  h2 {
     font-size: 23px;
     line-height: 32px;
     margin: 0 0 24px;
-    color: #17181A;
-}
-*+h2 {
+  }
+   
+  * + h2 {
     margin-top: 48px;
-}
-
-h3 {
+  }
+   
+  h3 {
     font-size: 18px;
     line-height: 24px;
     margin: 0 0 24px;
-    color: #17181A;
-    font-family: "Inter Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-h4,
-h5,
-h6 {
+  }
+   
+  h4,
+  h5,
+  h6 {
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 24px;
-}
-
-p,
-ol,
-ul,
-dl,
-table,
-address,
-figure {
+  }
+   
+  p,
+  ol,
+  ul,
+  dl,
+  table,
+  address,
+  figure {
     margin: 0 0 24px;
-}
-
-ul,
-ol {
+  }
+   
+  ul,
+  ol {
     padding-left: 24px;
-}
-
-li ul,
-li ol {
+  }
+   
+  li ul,
+  li ol {
     margin-bottom: 0;
-}
-
-blockquote {
+  }
+   
+  blockquote {
     font-style: italic;
     font-size: 23px;
     line-height: 32px;
     margin: 0 0 24px;
     font-family: "Times New Roman", serif;
-}
-
-blockquote * {
+  }
+   
+  blockquote * {
     font-size: inherit;
     line-height: inherit;
-}
-
-figcaption {
+  }
+   
+  figcaption {
     font-size: 12px;
     line-height: 16px;
     padding-top: 8px;
     color: Grey;
-}
-
-hr {
+  }
+   
+  hr {
     border: 0;
     height: 1px;
     background: LightGrey;
     margin: 0 0 24px;
-}
-
-a {
-    color: #00A1E6;
-    transition: all .1s ease-in-out;
-}
-
-a:visited,
-a:active {
-    color: #00E6A1;
-}
-
-a:hover,
-a:focus {
-    color: Crimson;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-
-@media (min-width: 576px) {}
-
-/* Medium devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {
-    html {
-        padding: 48px 48px 24px;
+  }
+   
+  a {
+    color: #00a1e6;
+    transition: all 0.1s ease-in-out;
+  }
+   
+  a:visited,
+  a:active {
+    color: #00a1e6;
+  }
+   
+  a:hover,
+  a:focus {
+    color: #1abaff;
+  }
+   
+  /* 
+      component: Author 
+  */
+  .c-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 16px;
+  }
+   
+  .c-author__img {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+  }
+   
+  .c-author__name,
+  .c-author__meta {
+    margin-bottom: 0;
+  }
+   
+  .c-author__name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+   
+  .c-author__meta {
+    font-family: "Inter Web", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+  }
+   
+  @media (min-width: 992px) {
+    .c-author {
+      flex-direction: column;
+      align-items: start;
     }
-    h1 {
-        font-size: 58px;
-        line-height: 64px;
-    }
-}
-
-@media (min-width: 768px) {
+  }
+   
+  /* 
+      component: Article
+   */
+   
+  .c-article__header,
+  .c-article__body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+   
+  .c-article__header {
+    padding: 24px 24px 0;
+  }
+   
+  .c-article__body {
+    padding: 0 24px;
+  }
+   
+  @media (min-width: 768px) {
     .c-article__header {
-        padding: 48px 48px 24px;
+      padding: 48px 48px 24px;
     }
-    .c-article__author {
-        padding: 24px;
-    }
+   
     .c-article__body {
-        padding: 24px 48px;
+      padding: 24px 48px;
     }
-}
-
-
-/* Large devices (landscape tablets, desktops, 992px and up) */
-
-@media (min-width: 992px) {
-    .c-article__body{
-        display: flex;
-        gap: 24px;
+   
+    .c-article__aside {
+      margin-bottom: 48px;
     }
-    .c-article__author{
-        width: 25%;
+  }
+   
+  @media (min-width: 992px) {
+    .c-article__body {
+      display: flex;
+      gap: 24px;
     }
-    .c-article__content{
-        width: 75%;
+   
+    .c-article__aside {
+      width: 25%;
     }
-}
-
-@media (min-width: 992px) {
-    .c-author{
-        flex-direction: column;
-        align-items: start;
+   
+    .c-article__content {
+      width: 75%;
     }
-}
-/* Extra large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {}
-
-/*
-    Print styles.
-    ---
-    Inlined to avoid the additional HTTP request:
-    http://www.phpied.com/delay-loading-your-print-css/
-*/
-
-@media print {
+  }
+   
+  /* 
+      utility: max-widh
+   */
+  .u-max-width-sm {
+    max-width: 36em;
+  }
+   
+  /* Small devices (landscape phones, 576px and up) */
+   
+  @media (min-width: 576px) {
+  }
+   
+  /* Medium devices (tablets, 768px and up) */
+   
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 58px;
+      line-height: 64px;
+    }
+  }
+   
+  /* Large devices (landscape tablets, desktops, 992px and up) */
+   
+  @media (min-width: 992px) {
+  }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+   
+  @media (min-width: 1200px) {
+  }
+   
+  /*
+      Print styles.
+      ---
+      Inlined to avoid the additional HTTP request:
+      http://www.phpied.com/delay-loading-your-print-css/
+  */
+   
+  @media print {
     *,
     *:before,
     *:after {
-        background: transparent !important;
-        color: #000 !important;
-        /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
+      background: transparent !important;
+      color: #000 !important;
+      /* Black prints faster:
+                                     http://www.sanbeiji.com/archives/953 */
+      box-shadow: none !important;
+      text-shadow: none !important;
     }
     a,
     a:visited {
-        text-decoration: underline;
+      text-decoration: underline;
     }
     a[href]:after {
-        content: " (" attr(href) ")";
+      content: " (" attr(href) ")";
     }
     abbr[title]:after {
-        content: " (" attr(title) ")";
+      content: " (" attr(title) ")";
     }
     /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
-        content: "";
+      content: "";
     }
     pre {
-        white-space: pre-wrap !important;
+      white-space: pre-wrap !important;
     }
     pre,
     blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
+      border: 1px solid #999;
+      page-break-inside: avoid;
     }
     /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+       * Printing Tables:
+       * http://css-discuss.incutio.com/wiki/Printing_Tables
+       */
     thead {
-        display: table-header-group;
+      display: table-header-group;
     }
     tr,
     img {
-        page-break-inside: avoid;
+      page-break-inside: avoid;
     }
     p,
     h2,
     h3 {
-        orphans: 3;
-        widows: 3;
+      orphans: 3;
+      widows: 3;
     }
     h2,
     h3 {
-        page-break-after: avoid;
+      page-break-after: avoid;
     }
-}
+  }
